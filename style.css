@@ -11,7 +11,15 @@ img {
 /* COMMON */
 
 body {
-    font-family: Edu TAS Beginner, Sometype Mono
+    font-family: Edu TAS Beginner, Sometype Mono;
+    background-image: url('./img/cork.png');
+        /* Specify the image */
+        background-size: cover;
+        /* Scale the image to cover the container */
+        background-position: center;
+        /* Center the image */
+        background-repeat: no-repeat;
+        /* Prevent the image from repeating */
 }
 
 .header {
@@ -19,6 +27,7 @@ body {
     min-height: 70px;
     text-align: center;
     border: 1px solid black;
+    background-image: url('./img/wall.png');
 }
 
 .container {
@@ -41,8 +50,14 @@ body {
 } */
 
 
+
 .card-image {
-    margin: 1rem 0;
+    margin: 1rem;
     background-color: pink;
-    min-height: 200px;
+    /* min-height: 200px; */
+}
+
+.card-text {
+    margin: 1rem;
+    font-size: 15px;
 }
