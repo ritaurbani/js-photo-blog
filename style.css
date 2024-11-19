@@ -11,7 +11,7 @@ img {
 /* COMMON */
 
 body {
-   font-family: Edu TAS Beginner, Sometype Mono
+    font-family: Edu TAS Beginner, Sometype Mono
 }
 
 .header {
@@ -29,20 +29,20 @@ body {
 
 .row {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 15px;
 }
 
 /* .col {
-    width: (95% / 3);
+    width: calc(95% / 3);
     border: 2px solid black;
     min-height: 300px;
 } */
 
 
-    .card-image {
-        margin: 1rem 0;
-        background-color: pink;
-        min-height: 200px;
-    }
+.card-image {
+    margin: 1rem 0;
+    background-color: pink;
+    min-height: 200px;
+}
