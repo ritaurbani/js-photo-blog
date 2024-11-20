@@ -46,7 +46,7 @@ const clickBtnToRemoveOverlay = () => {
     })
 }
 
-//quando clicco una foto, proprio quella foto e'mostrat all'interno dell’overlay.
+//quando clicco una foto, proprio quella foto e'mostrata all'interno dell’overlay.
 
 
 

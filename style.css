@@ -63,7 +63,6 @@ body {
 }
 
 .overlay {
-
     width: 100vw;
     height: 100vh;
     background-color: rgba(0,0,0,0.5) ;
@@ -71,13 +70,13 @@ body {
     top: 0;
     left:0;
     z-index:999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+       
 .overlay-img {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    
+    width: 30%;
 }
 
 .hide {
@@ -87,21 +86,20 @@ body {
 .close-btn {
 padding:3px;
 border-radius: 7px;
+position:absolute;
+top:0;
+right:0;
 }
-
-
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .col {
-        width: 50%;
-        /* 2 cards per row on tablets */
+        width: 50%;      
     }
 }
 
 @media (max-width: 480px) {
     .col {
-        width: 100%;
-        /* 1 card per row on mobile screens */
+        width: 100%;      
     }
 }
