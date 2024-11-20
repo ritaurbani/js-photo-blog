@@ -7,6 +7,7 @@ const params = {
 
 const rowElem = document.querySelector(".row");
 const overlayElem = document.querySelector(".overlay")
+const overlayImgElem = document.querySelector(".overlay-img")
 
 /////////////Functions////////////////////
     
@@ -35,6 +36,8 @@ const addClickImageListener = () => {
         })
     })
 }
+
+
 
 //Cliccando il button di chiusura, l’overlay scompare nuovamente.
 const clickBtnToRemoveOverlay = () => {

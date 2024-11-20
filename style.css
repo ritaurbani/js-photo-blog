@@ -13,13 +13,9 @@ img {
 body {
     font-family: Edu TAS Beginner, Sometype Mono;
     background-image: url('./img/cork.png');
-        /* Specify the image */
         background-size: cover;
-        /* Scale the image to cover the container */
         background-position: center;
-        /* Center the image */
         background-repeat: no-repeat;
-        /* Prevent the image from repeating */
 }
 
 .header {
@@ -54,7 +50,6 @@ body {
 .card-image {
     margin: 1rem;
     background-color: pink;
-    /* min-height: 200px; */
 }
 
 .card-text {
