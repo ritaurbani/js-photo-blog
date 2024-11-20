@@ -62,6 +62,35 @@ body {
     font-size: 15px;
 }
 
+.overlay {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5) ;
+    position:absolute;
+    top: 0;
+    left:0;
+    z-index:999;
+}
+
+.overlay-img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    
+}
+
+.hide {
+    display: none;
+}
+
+.close-btn {
+padding:3px;
+border-radius: 7px;
+}
+
+
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .col {
