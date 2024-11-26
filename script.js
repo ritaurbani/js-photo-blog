@@ -1,6 +1,6 @@
 // http used: https://jsonplaceholder.typicode.com/photos?_limit=6  27-chiamate
 
-//Definisco i paramettri della mia chiamata API
+//Definisco i parametri della mia chiamata API
 const params = {
     _limit: 6
 }
@@ -14,28 +14,29 @@ const overlayText = document.querySelector(".overlay p")
 /////////////Functions////////////////////
 
 //Creo una card da stampare in pagina
-function renderCard(card) {
+function createCard(card) {
     return `<div class="col">
-        <div class="card" data-post-id="${card.id}">
-            <div class="card-image">
-                <img class="img" src="${card.url}" alt="${card.title}" class="">
+        <div class="card">
+            <img class="pin" src="./img/pin.svg"
+                <div class="card-image">
+                    <img class="img" src="${card.url}" alt="${card.title}" class="">
+                </div>
+                <div class="card-text">
+                    <p class="text">${card.title}</p>
+                </div>
             </div>
-            <div class="card-text">
-                <p class="text">${card.title}</p>
-            </div>
-        </div>
-    </div>`;
+        </div>`;
 }
 
 //Quando clicco una foto, proprio quella foto e'mostrata all'interno dell’overlay.
 const addClickImageListener = () => {
-    const imgsElem = document.querySelectorAll(".img") //queste posso mettere anche fuori?
+    const imgsElem = document.querySelectorAll(".img") 
     imgsElem.forEach(img => {
         img.addEventListener("click", () => {
-            console.log("click", img.src); //rivedere questa cosa-not too clear
+            console.log("click", img.src); 
             overlayElem.classList.remove("hide")
             overlayText.innerText = img.alt;
-            overlayImgElem.src = img.src; // qui sostituisci il valore di src di overlayImgElem con l'src dell'immagine cliccata
+            overlayImgElem.src = img.src; 
         })
     })
 }
@@ -52,7 +53,7 @@ const clickBtnToRemoveOverlay = () => {
 axios.get("https://jsonplaceholder.typicode.com/photos", { params }).then(resp => {
     console.log(resp.data)
     const cards = resp.data;
-    cards.forEach((card) => rowElem.innerHTML += renderCard(card)) //per ogni obj stampa card in pagina
+    cards.forEach((card) => rowElem.innerHTML += createCard(card)) 
     addClickImageListener();
     clickBtnToRemoveOverlay();
 })
